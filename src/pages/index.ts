@@ -1,0 +1,5 @@
+export {Main} from './Main'
+export {OnlineTest} from './OnlineTest'
+export {LmsCorp} from './LmsCorp'
+export {LmsStudy} from './LmsStudy'
+export {Math} from './Math'

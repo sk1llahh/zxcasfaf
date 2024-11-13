@@ -1,0 +1,23 @@
+@import "~antd/dist/reset.css";
+@import "reset";
+@import "variables";
+
+#root {
+  height: 100%;
+}
+
+.section{
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  overflow: hidden;
+
+
+  @media (max-width: 768px) {
+    height: auto;
+  }
+  @media (min-width: 768px) {
+    height: 100vh;
+  }
+}

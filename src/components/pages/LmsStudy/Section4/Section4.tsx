@@ -1,0 +1,81 @@
+import {Section4Styles} from "./Section4.styles";
+import {Button, Carousel, Col, Form, Grid, Input, Row} from "antd";
+import React, {useMemo, useRef} from "react";
+import c from "classnames";
+import {useTheme} from "../../../../hooks";
+import {MyText} from "../../../common/MyText/MyText";
+import cl from "classnames";
+import {MyButton} from "../../../common/MyButton/MyButton";
+
+const {useBreakpoint} = Grid;
+export const Section4 = () => {
+  const screens = useBreakpoint();
+  const {theme, themeConfig} = useTheme()
+  
+  return (
+    <Section4Styles className={c('section')}>
+      <Row justify='center' align='middle' gutter={[16, 16]}>
+        <Col xs={22} sm={22} md={20} lg={19} xl={18} xxl={18}>
+          <Row gutter={[
+            {
+              xs: 16,
+              sm: 16,
+              md: 16,
+              lg: 16,
+              xl: 16,
+              xxl: 16,
+            },
+            {
+              xs: 24,
+              sm: 24,
+              md: 32,
+              lg: 48,
+              xl: 48,
+              xxl: 48,
+            }
+          ]}>
+            <Col span={24}>
+              <Col span={24}>
+                <Row justify='center'>
+                  <Col xs={24} sm={24} md={18} lg={16} xl={12} xxl={12}>
+                    <MyText className={cl('title')}>
+                      Заполните эту короткую форму, и мы свяжемся с вами в ближайшее время
+                    </MyText>
+                  </Col>
+                </Row>
+              </Col>
+              <Col span={24}>
+                <Row justify='center'>
+                  <Col xs={24} sm={24} md={18} lg={16} xl={12} xxl={12}>
+                    <Form className={'form'}>
+                      <Row justify='center' align='middle' gutter={[16, 16]}>
+                        <Col span={9}>
+                          <Form.Item>
+                            <Input placeholder='Ваше имя'/>
+                          </Form.Item>
+                        </Col>
+                        <Col span={9}>
+                          <Form.Item>
+                            <Input placeholder='Email'/>
+                          </Form.Item>
+                        </Col>
+
+                        <Col span={6}>
+                          <Form.Item>
+                            <MyButton type='primary' ghost htmlType='submit'>
+                              Отправить
+                            </MyButton>
+                          </Form.Item>
+                        </Col>
+                      </Row>
+                    </Form>
+                  </Col>
+                </Row>
+              </Col>
+            </Col>
+          </Row>
+        </Col>
+      </Row>
+    </Section4Styles>
+  )
+}

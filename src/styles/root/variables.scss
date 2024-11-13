@@ -1,0 +1,58 @@
+@font-face{
+  font-family: "Roboto";
+  src: url("../../assets/fonts/RobotoFlex.ttf");
+}
+@font-face{
+  font-family: "PTSerif-Bold";
+  src: url("../../assets/fonts/PT_Serif-Web-Bold.ttf");
+}
+@font-face{
+  font-family: "PTSerif-Regular";
+  src: url("../../assets/fonts/PT_Serif-Web-Regular.ttf");
+}
+:root{
+  //breakpoints
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+
+
+  //font size
+  --fs-title-1: 40px;
+  --fs-title-2: 32px;
+  --fs-title-3: 24px;
+  --fs-subtitle: 20px;
+  --fs-body-1: 18px;
+  --fs-body-2: 16px;
+  --fs-body-3: 14px;
+  --fs-small-1: 12px;
+  --fs-small-2: 10px;
+  --fs-h-1: 56px;
+  --fs-h-2: 48px;
+  --fs-h-3: 40px;
+  --fs-h-4: 32px;
+  --fs-h-5: 24px;
+  --fs-h-6: 20px;
+  --fs-h-7: 16px;
+
+  //line height
+  --lh-title-1: 48px;
+  --lh-title-2: 40px;
+  --lh-title-3: 32px;
+  --lh-subtitle: 28px;
+  --lh-body-1: 24px;
+  --lh-body-2: 24px;
+  --lh-body-3: 20px;
+  --lh-small-1: 14px;
+  --lh-small-2: 12px;
+  --lh-h-1: 64px;
+  --lh-h-2: 56px;
+  --lh-h-3: 48px;
+  --lh-h-4: 40px;
+  --lh-h-5: 32px;
+  --lh-h-6: 28px;
+  --lh-h-7: 24px;
+}
